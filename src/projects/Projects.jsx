@@ -37,11 +37,14 @@ export function Projects({ onGalleryClick }) { return (
         <article className="highlight photo-case" id="acessibilize">
           <p className="category"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s7-8 7-13a7 7 0 1 0-14 0c0 5 7 13 7 13z M15 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>Inovação · Acessibilidade e inclusão</p>
           <h3>Acessibilize</h3>
-          <figure className="case-cover"><img className="contain-cover" src={asset("photos/acessibilize-entrega-original.jpeg")} alt="Jakeline recebendo a menção honrosa do Acessibilize na UFABC" loading="lazy" /><figcaption>Entrega da premiação na UFABC.</figcaption></figure>
+          <div className="case-gallery">
+            <figure><a href={asset("photos/acessibilize-busca.png")}><img src={asset("photos/acessibilize-busca.png")} alt="Tela de busca de lugares acessíveis com filtros por categoria e recurso de acessibilidade" loading="lazy" /></a><figcaption>Busca de lugares</figcaption></figure>
+            <figure><a href={asset("photos/acessibilize-detalhes.png")}><img src={asset("photos/acessibilize-detalhes.png")} alt="Página do Tatu Bola com recursos de acessibilidade, horários, localização e avaliações" loading="lazy" /></a><figcaption>Detalhes do local</figcaption></figure>
+          </div>
           <p>Aplicativo para encontrar e avaliar locais de lazer acessíveis. Idealizei e liderei sua criação, com protótipo no Figma.</p>
           <div className="proof"><strong><span aria-hidden="true" className="award-icon">✦</span> Menção honrosa</strong><span>CEITEC · Engineering Innovation 2024, UFABC</span></div>
           <div className="acessibilize-actions">
-            <a className="button" href="https://www.figma.com/proto/ZZSMtOtGvfhP3JUytVAlVb/Acessibilize?node-id=23-168&amp;p=f&amp;t=ePG5gXYLLSRbSXsc-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=23%3A168" target="_blank" rel="noopener noreferrer">Acessar o protótipo</a>
+            <a className="button" href="https://github.com/jakelinefernandess/acessibilize" target="_blank" rel="noopener noreferrer">Acessar GitHub</a>
           <details><summary>Certificado e fotos</summary>
             <p>Certificado e registros da feira</p>
             <div className="award-records">

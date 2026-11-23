@@ -32,8 +32,9 @@ nav { display: flex; align-items: center; justify-content: space-between; gap: 2
 .links { display: flex; flex-wrap: wrap; gap: 26px; color: var(--muted); font-size: .9rem; font-weight: 600; }
 .links a:hover, footer a:hover { color: var(--teal); }
 .links { align-items: center; }
-.linkedin-icon { display: inline-flex; align-items: center; justify-content: center; min-width: 36px; min-height: 36px; color: var(--teal); border: 1px solid var(--line); border-radius: 9px; background: var(--white); }
-.linkedin-icon:hover { background: var(--soft); }
+.social-links { display: flex; align-items: center; gap: 8px; }
+.social-icon { display: inline-flex; align-items: center; justify-content: center; min-width: 36px; min-height: 36px; color: var(--teal); border: 1px solid var(--line); border-radius: 9px; background: var(--white); }
+.social-icon:hover { background: var(--soft); }
 
 .hero-shell { position: relative; overflow: hidden; color: var(--white); background: var(--deep); }
 .hero-shell::before { position: absolute; inset: 0; pointer-events: none; content: ""; background: radial-gradient(ellipse at 82% 22%, rgb(8 126 121 / 34%), transparent 34%), radial-gradient(ellipse at 4% 100%, rgb(184 243 108 / 10%), transparent 36%); }
@@ -255,7 +256,8 @@ header { background: rgb(244 248 252 / 96%); border-bottom-color: var(--line); }
 @media (min-width: 621px) { .highlight h3 { display: flex; align-items: center; } }
 .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1104px; }
 .timeline .date { align-self: center; justify-self: center; text-align: center; }
-#acessibilize .case-cover img { background: var(--soft); }
+#acessibilize > .case-gallery { margin-block: 0 var(--space-sm); }
+#acessibilize > .case-gallery img { object-fit: contain; background: var(--soft); }
 @media (max-width: 620px) {
   .links { gap: 8px 14px; }
   .hero { padding-block: 40px 38px; }
@@ -433,8 +435,8 @@ nav { min-height:80px; }
 .highlight .case-cover { overflow:hidden; border-radius:12px; }
 .highlight .case-cover img { transition:transform .45s ease; }
 .highlight:hover .case-cover img { transform:scale(1.025); }
-.button, .podcast-link, summary, .linkedin-icon { transition:transform .2s ease, background .2s ease, box-shadow .2s ease; }
-.button:hover, .podcast-link:hover, summary:hover, .linkedin-icon:hover { transform:translateY(-2px); }
+.button, .podcast-link, summary, .social-icon { transition:transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.button:hover, .podcast-link:hover, summary:hover, .social-icon:hover { transform:translateY(-2px); }
 .timeline article { transition:transform .2s, box-shadow .2s; }
 .timeline article:hover { transform:translateX(5px); box-shadow:0 12px 30px rgba(16,50,84,.08); }
 .reveal { opacity:0; transform:translateY(22px); transition:opacity .6s ease, transform .6s ease; }
@@ -984,9 +986,9 @@ footer { background: #102b4f; }
   .stat { border-bottom-color: #3c5576; }
 }
 
-/* Ícone do LinkedIn */
-header .linkedin-icon,
-header .linkedin-icon:hover {
+/* Ícones dos perfis sociais */
+header .social-icon,
+header .social-icon:hover {
   background: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -1016,7 +1018,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 #photo-viewer button { background: var(--soft); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; min-height: 44px; padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer; }
 #photo-viewer button:disabled { opacity: .45; cursor: default; }
 body:has(#photo-viewer[open]) { overflow: hidden; }
-header .links a:not(.linkedin-icon) { font-weight: 700; }
+header .links a:not(.social-icon) { font-weight: 700; }
 .case-gallery a:focus-visible, .award-records a:focus-visible { outline-offset: 3px; }
 :is(#sobre, #projetos, #trajetoria, #competencias):focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
 footer .wrap { justify-content: center; column-gap: 28px; row-gap: 14px; }
