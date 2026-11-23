@@ -26,11 +26,11 @@ export function Projects({ onGalleryClick }) { return (
           <figure className="case-cover"><img className="contain-cover" src={asset("photos/champions-premio-atualizado.webp")} alt="Jakeline com o troféu Guardiões do Ano" loading="lazy" /><figcaption>Reconhecimento do programa Security Champions.</figcaption></figure>
           <p>Liderei por dois anos o programa de formação em segurança para desenvolvedores, capacitando mais de 600 profissionais.</p>
           <div className="proof"><strong><span aria-hidden="true" className="award-icon">✦</span> Projeto Destaque</strong><span>Guardiões do Ano 2024</span></div>
-          <details><summary>Ver fotos e atividades</summary><p>Planejei capacitações, acompanhei indicadores e organizei o reconhecimento dos participantes.</p>
+          <details><summary>Ver fotos</summary><p>Planejei capacitações, acompanhei indicadores e organizei o reconhecimento dos participantes.</p>
             <div className="case-gallery">
-              <figure><a href={asset("photos/champions-encontro.webp")} target="_blank" rel="noopener"><img src={asset("photos/champions-encontro.webp")} alt="Jakeline apresentando a agenda aos participantes no Allianz Parque" loading="lazy" /></a><figcaption>Encontro com participantes</figcaption></figure>
-              <figure><a href={asset("photos/champions-hero.jpeg")} target="_blank" rel="noopener"><img src={asset("photos/champions-hero.jpeg")} alt="Jakeline no palco com o letreiro Security Champions 2025" loading="lazy" /></a><figcaption>Security Champions 2025</figcaption></figure>
-              <figure className="gallery-wide"><a href={asset("photos/champions-grupo.webp")} target="_blank" rel="noopener"><img src={asset("photos/champions-grupo.webp")} alt="Grupo Security Champions reunido no Allianz Parque" loading="lazy" /></a><figcaption>Evento Security Champions</figcaption></figure>
+              <figure><a href={asset("photos/champions-encontro.webp")} target="_blank" rel="noopener"><img src={asset("photos/champions-encontro.webp")} alt="Jakeline apresentando a agenda aos participantes no Allianz Parque" loading="lazy" /></a></figure>
+              <figure><a href={asset("photos/champions-hero.jpeg")} target="_blank" rel="noopener"><img src={asset("photos/champions-hero.jpeg")} alt="Jakeline no palco com o letreiro Security Champions 2025" loading="lazy" /></a></figure>
+              <figure className="gallery-wide"><a href={asset("photos/champions-grupo.webp")} target="_blank" rel="noopener"><img src={asset("photos/champions-grupo.webp")} alt="Grupo Security Champions reunido no Allianz Parque" loading="lazy" /></a></figure>
             </div>
           </details>
         </article>
@@ -44,7 +44,7 @@ export function Projects({ onGalleryClick }) { return (
           <div className="proof"><strong><span aria-hidden="true" className="award-icon">✦</span> Menção honrosa</strong><span>CEITEC · Engineering Innovation 2024, UFABC</span></div>
           <div className="acessibilize-actions">
             <a className="button" href="https://github.com/jakelinefernandess/acessibilize" target="_blank" rel="noopener noreferrer">Acessar GitHub</a>
-          <details><summary>Certificado e fotos</summary>
+          <details><summary>Ver fotos</summary>
             <p>Tela do app, certificado e registros da feira</p>
             <div className="award-records">
               <a href={asset("photos/acessibilize-certificado.webp")}><img src={asset("photos/acessibilize-certificado.webp")} alt="Ampliar o certificado de menção honrosa do Acessibilize, de 9 de dezembro de 2024" loading="lazy" /></a>
@@ -60,10 +60,10 @@ export function Projects({ onGalleryClick }) { return (
           <figure className="case-cover"><img src={asset("photos/elas-proposito.webp")} alt="Jakeline apresentando o propósito do grupo de equidade de gênero" loading="lazy" /><figcaption>Evento do Dia da Mulher</figcaption></figure>
           <p>Liderei ações de equidade de gênero, com encontros, rodas de conversa e acolhimento de novos integrantes.</p>
           <div className="proof"><strong>+2 anos</strong><span>de liderança em diversidade</span></div>
-          <details><summary>Ver fotos e atividades</summary>
+          <details><summary>Ver fotos</summary>
             <div className="case-gallery">
-              <figure><a href={asset("photos/elas-acoes.webp")} target="_blank" rel="noopener"><img src={asset("photos/elas-acoes.webp")} alt="Jakeline apresentando as ações do grupo de equidade de gênero em 2024" loading="lazy" /></a><figcaption>Ações de 2024</figcaption></figure>
-              <figure><a href={asset("photos/elas-tech.webp")} target="_blank" rel="noopener"><img src={asset("photos/elas-tech.webp")} alt="Participantes do Tech Talks Especial Elas" loading="lazy" /></a><figcaption>Comunidade e tecnologia</figcaption></figure>
+              <figure><a href={asset("photos/elas-acoes.webp")} target="_blank" rel="noopener"><img src={asset("photos/elas-acoes.webp")} alt="Jakeline apresentando as ações do grupo de equidade de gênero em 2024" loading="lazy" /></a></figure>
+              <figure><a href={asset("photos/elas-tech.webp")} target="_blank" rel="noopener"><img src={asset("photos/elas-tech.webp")} alt="Participantes do Tech Talks Especial Elas" loading="lazy" /></a></figure>
             </div>
           </details>
         </article>

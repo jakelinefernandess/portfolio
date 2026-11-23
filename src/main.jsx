@@ -34,7 +34,7 @@ function App() {
     const links = [...group.querySelectorAll('a')];
     const photos = links.map(item => {
       const alt = item.querySelector('img').alt;
-      return { src: item.href, alt, caption: item.closest('figure')?.querySelector('figcaption')?.textContent || alt };
+      return { src: item.href, alt, caption: item.closest('figure')?.querySelector('figcaption')?.textContent };
     });
     trigger.current = link;
     setGallery({ photos, index: links.indexOf(link) });
@@ -78,7 +78,7 @@ function App() {
           <button type="button" id="viewer-close" aria-label="Fechar galeria" onClick={closeGallery}>Fechar ×</button>
         </div>
         <img id="viewer-image" src={photo?.src} alt={photo?.alt ?? ''} />
-        <p id="viewer-caption">{photo?.caption}</p>
+        {photo?.caption && <p id="viewer-caption">{photo.caption}</p>}
         <div className="viewer-controls">
           <button type="button" id="viewer-prev" disabled={!gallery || gallery.index === 0} onClick={() => move(-1)}>Anterior</button>
           <button type="button" id="viewer-next" disabled={!gallery || gallery.index === gallery.photos.length - 1} onClick={() => move(1)}>Próxima</button>
